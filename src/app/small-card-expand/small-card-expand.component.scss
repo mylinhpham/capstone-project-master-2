@@ -1,0 +1,16 @@
+.card {
+  font-family: inter-bold;
+  border-radius: 20px;
+  clr-icon {
+    margin-top: 2em;
+    transform: rotate(180deg);
+  }
+  .card-header{
+    font-size: 1.25em;
+  }
+  .card-block {
+    background-color: #E4E4E4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}

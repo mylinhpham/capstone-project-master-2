@@ -1,0 +1,84 @@
+<div class="main-container">
+  <app-vert-nav>
+  </app-vert-nav>
+  <div class="content-container">
+    <div class="content-area">
+      <div class="clr-row">
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+          <app-round-card
+            [cardHeader]="constant.VIRTUAL_TOUR_HEADER"
+            [cardMainText]="constant.VIRTUAL_TOUR_MAIN_TEXT"
+            [buttonText]="constant.BUTTON_TEXT"
+            [headerColor]="constant.VIOLET_PURPLE"
+            [textColor]="constant.VIOLET_PURPLE"
+          >
+          </app-round-card>
+        </div>
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+          <app-large-image-card
+            [mediaSrc]="constant.PLACEHOLDER_IMAGE_1"
+            [bodyText]="constant.VIRTUAL_TOUR_MAIN_TEXT"
+            [textColor]="constant.VIOLET_PURPLE"
+            [isVideo]="false"
+          ></app-large-image-card>
+        </div>
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+          <app-small-image-card
+            [imgSrc]="constant.PLACEHOLDER_IMAGE_1"
+            [cardHeader]="constant.SMALL_IMAGE_HEADER"
+            [subText]="constant.SMALL_IMAGE_TEXT"
+            [subTextColor]="constant.VIOLET_PURPLE"
+          >
+          </app-small-image-card>
+        </div>
+      </div>
+
+
+      <div class="clr-row">
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+          <app-large-image-card
+            [mediaSrc]="constant.SAMPLE_VIDEO_URL"
+            [bodyText]="constant.VIRTUAL_TOUR_MAIN_TEXT"
+            [textColor]="constant.VIOLET_PURPLE"
+            [isVideo]="true"
+          ></app-large-image-card>
+        </div>
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+          <app-round-info-card
+            [cardHeader]="constant.VIRTUAL_TOUR_HEADER"
+            [cardMainText]="constant.LONG_TEXT"
+            [headerColor]="constant.VIOLET_PURPLE"
+            [textColor]="constant.INDIGO"
+          ></app-round-info-card>
+        </div>
+        <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+          <app-small-card-expand
+            [mainText]="constant.PLACEHOLDER_QUESTION"
+            [expandedText]="constant.PLACEHOLDER_EXPANDED"
+            [mainTextColor]="constant.VIOLET_PURPLE"
+          ></app-small-card-expand>
+        </div>
+      </div>
+
+      <div class="clr-row">
+        <div class="clr-col-12">
+          <app-card-carousel
+            [cells]="placeholderModel"
+            [isTallCard]="true"
+          >
+          </app-card-carousel>
+        </div>
+      </div>
+
+      <div class="clr-row">
+        <div class="clr-col-12">
+          <app-card-carousel
+            [cells]="placeholderModel"
+            [isTallCard]="false"
+          >
+          </app-card-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

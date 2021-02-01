@@ -1,0 +1,33 @@
+.card {
+  font-family: inter;
+  border-radius: 15px;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  * {
+    color: black;
+  }
+  .card-header {
+    font-size: 1.5em;
+    border-style: none;
+    font-weight: bold;
+  }
+  .card-block {
+    border-style: none;
+  }
+  button {
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    font-family: inter-bold;
+  }
+  button:hover {
+    color: #272733;
+  }
+  hr {
+    width: 90%;
+    height: 1px;
+    background-color: #D1D0DC;
+    border: none;
+  }
+}

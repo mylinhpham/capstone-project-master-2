@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="clr-row">
+    <div class="clr-col-10">
+      <div class="card-header" [style.color]="mainTextColor">
+        {{mainText}}
+      </div>
+    </div>
+    <div class="clr-col-2">
+      <clr-icon #toggleButton shape="angle" (click)="toggleExpanded()"></clr-icon>
+    </div>
+  </div>
+  <div class="clr-row" [hidden]="!isExpanded" [@slideInOut]="animationState">
+    <div class="clr-col-12">
+      <div class="card-block">
+        {{expandedText}}
+      </div>
+    </div>
+  </div>
+</div>

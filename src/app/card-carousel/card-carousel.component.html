@@ -1,0 +1,27 @@
+<div>
+  <carousel
+    [overflowCellsLimit]="2"
+    [cellsToShow]="1.3"
+    [arrows]="false"
+    [height]="height"
+  >
+    <div class="carousel-cell" *ngFor="let c of cells">
+      <app-tall-card
+        [mediaSrc]="c.mediaSrc"
+        [title]="c.title"
+        [subtitle]="c.subtitle"
+        [mainText]="c.text"
+        (componentHeightEvent)="setHeight($event)"
+        *ngIf="isTallCard"
+      >
+      </app-tall-card>
+      <app-large-image-card
+        [mediaSrc]="c.mediaSrc"
+        [bodyText]="c.title"
+        (componentHeightEvent)="setHeight($event)"
+        *ngIf="!isTallCard"
+      >
+      </app-large-image-card>
+    </div>
+  </carousel>
+</div>

@@ -1,0 +1,26 @@
+.card {
+  margin-top: 0;
+  font-family: inter-bold;
+  border-radius: 15px;
+  img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+  }
+  > * {
+    border: none;
+  }
+  .card-header {
+    padding-bottom: 0;
+    margin-bottom: -0.25em;
+  }
+  .card-block {
+    padding-bottom: 0.25em;
+    margin-bottom: -0.25em;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .bottom-block {
+    padding-bottom: 0.75em;
+  }
+}

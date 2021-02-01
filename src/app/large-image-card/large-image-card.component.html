@@ -1,0 +1,13 @@
+<div class="card" #imageCardWrapper>
+  <div class="card-img">
+    <img *ngIf="!isVideo" src="{{mediaSrc}}"/>
+    <video *ngIf="isVideo" controls>
+      <source src="{{mediaSrc}}" type="video/mp4">
+    </video>
+  </div>
+  <div class="card-block">
+    <p class="card-text" [style.color]="textColor">
+      {{bodyText}}
+    </p>
+  </div>
+</div>

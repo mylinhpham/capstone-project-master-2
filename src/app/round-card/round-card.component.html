@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header" [style.color]="headerColor">
+    {{cardHeader}}
+  </div>
+  <div class="card-block" [style.color]="textColor">
+    {{cardMainText}}
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-outline"
+            [style.color]="headerColor"
+            [style.border-color]="headerColor"
+    >{{buttonText}}</button>
+  </div>
+  <hr>
+</div>

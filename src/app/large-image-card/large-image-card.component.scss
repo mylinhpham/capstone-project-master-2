@@ -1,0 +1,23 @@
+.card {
+  border-radius: 15px;
+  background-color: white;
+  * {
+    color: black;
+  }
+  .card-block{
+    font-family: inter-bold;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  video {
+    margin-bottom: -0.5em;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+}

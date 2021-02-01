@@ -1,0 +1,54 @@
+<div #myNav class="overlay">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <div class="clr-row" id="top-header-wrapper">
+    <div class="clr-col-12">
+      <div class="vert-nav-header">
+        {{constant.VERT_NAV_HEADER}}
+      </div>
+    </div>
+  </div>
+  <div class="clr-row">
+    <div class="clr-col-12">
+      <img src="{{constant.WAVE_SVG}}">
+    </div>
+  </div>
+  <div class="clr-row">
+    <div class="clr-col-12">
+      <div class="overlay-content">
+        <a class="home" href="#">Home</a>
+        <a href="#">Group One</a>
+        <div class="subgroup-wrapper">
+          <a href="#">Subgroup Item One</a>
+          <a href="#">Subgroup Item Two</a>
+          <a href="#">Subgroup Item Three</a>
+        </div>
+        <a href="#">Group Two</a>
+        <div class="subgroup-wrapper">
+          <a href="#">Subgroup Item One</a>
+          <a href="#">Subgroup Item Two</a>
+          <a href="#">Subgroup Item Three</a>
+        </div>
+        <a href="#">Group Three</a>
+        <div class="subgroup-wrapper">
+          <a href="#">Subgroup Item One</a>
+          <a href="#">Subgroup Item Two</a>
+          <a href="#">Subgroup Item Three</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clr-row">
+    <div class="clr-col-12">
+      <div class="button-wrapper">
+        <app-tour-button
+        [buttonText]="constant.VIRTUAL_TOUR_TEXT"
+        [iconSvg]="constant.THREESIXTY_SVG"
+        ></app-tour-button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="menu-wrapper">
+  <img src="{{constant.BURGER_MENU_SVG}}" (click)="openNav()">
+</div>
+
